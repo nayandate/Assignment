@@ -11,10 +11,17 @@ n = int(input("Number = "))
 temp = n
 no=0
 rev=0
+count=0
+while(n>0):
+    count=count+1
+    n=n//10
+n = temp
+
 while(n>0):
     rev=n%10
-    no = rev*rev*rev+no
+    no = no+rev**count
     n=n//10
+
 if no == temp:
     print("Armstrong number ")
 else:
