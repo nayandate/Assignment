@@ -5,11 +5,10 @@ S = "abcabcbb"
 '''
 
 s = input("Enter String: ")
-max=0
-ans=""
+vis = ""
+ans = ""
 for i in range(len(s)):
     count = 0
-    visited=""
     for j in range(i+1,len(s)+1):
         y =s[i:j] 
         if y == y[::-1]:
